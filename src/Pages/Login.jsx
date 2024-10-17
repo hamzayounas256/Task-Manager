@@ -7,9 +7,10 @@ export default function Login() {
 			<Card className="loginCard">
 				<form>
 					<h3 className="text-center">LOGIN</h3>
-					<div className="loginUser">
+					<div className="loginUser mb-2">
 						<label htmlFor="username">Username</label>
 						<input
+							className="form-control"
 							type="text"
 							name="username"
 							id="username"
@@ -17,9 +18,10 @@ export default function Login() {
 							required
 						/>
 					</div>
-					<div className="loginUser">
+					<div className="loginUser mt-2">
 						<label htmlFor="password">Password</label>
 						<input
+							className="form-control"
 							type="password"
 							name="password"
 							id="password"

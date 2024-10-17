@@ -7,6 +7,8 @@ import { Layout } from "./Layout";
 import Login from "./Pages/Login";
 import Home from "./Pages/Home";
 import Register from "./Pages/Register";
+import AddTask from "./Components/AddTask";
+import AllTasks from "./Components/AllTasks";
 
 const router = createBrowserRouter([
 	{
@@ -20,7 +22,11 @@ const router = createBrowserRouter([
 	{
 		path: "/",
 		element: <Layout />,
-		children: [{ path: "/", element: <Home /> }],
+		children: [
+			{ path: "/", element: <Home /> },
+			{ path: "/addtask", element: <AddTask /> },
+			{ path: "/alltasks", element: <AllTasks /> },
+		],
 	},
 ]);
 function App() {

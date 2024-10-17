@@ -1,15 +1,22 @@
-:root {
+/* :root {
 	--blue: #1e90ff;
 	--white: #ffffff;
-}
+} */
 
 a {
 	text-decoration: none;
 	color: inherit;
 }
 
+label {
+	font-weight: bold;
+	margin-left: 5px;
+}
+
 body {
 	margin: 0;
+	padding: 0;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	color: #e2f1e7;
 	background-color: #243642;
 }
@@ -27,11 +34,11 @@ body {
 	display: flex;
 }
 
-.loginCard form h3 {
+h3 {
 	margin: 15px 0;
 }
 
-.loginCard form h3:hover {
+h3:hover {
 	color: #243642;
 }
 
@@ -40,6 +47,11 @@ body {
 	flex-direction: column;
 	width: 300px;
 	margin: 5px 15px;
+}
+
+.loginUser input {
+	height: 2rem;
+	border-radius: 10px;
 }
 
 .loginSubmit {
@@ -67,4 +79,73 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+/* Add user */
+
+.adduser {
+	/* height: 80vh; */
+	display: flex;
+	justify-content: center;
+	margin-top: 2rem;
+	/* align-items: center; */
+	flex-wrap: nowrap;
+}
+
+.addusercard {
+	background-color: #629584;
+	color: #e2f1e7;
+	display: flex;
+	padding: 15px;
+	width: 500px;
+}
+
+.adduserform div {
+	margin: 15px 0;
+	/* width: 500px; */
+}
+
+.adduserButton {
+	background-color: #243642;
+	color: #e2f1e7;
+	display: flex;
+	justify-content: end;
+	/* margin-top: 15px; */
+	border: none;
+}
+
+.adduserButton:hover {
+	background-color: #e2f1e7;
+	color: #243642;
+}
+
+@media only screen and (max-width: 780px) {
+	.dates {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+/* header dropdown */
+.dropdown-toggle::after {
+	content: none;
+}
+
+.fa-solid {
+	color: #e2f1e7;
+}
+
+/* All Tasks */
+.alltaskCard {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	/* height: 50px; */
+}
+
+table,
+th,
+td {
+	border: 1px solid black;
+	border-collapse: collapse;
 }
