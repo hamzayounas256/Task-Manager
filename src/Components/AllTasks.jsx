@@ -28,11 +28,11 @@ export default function AllTasks() {
 							</td>
 						</tr>
 						<tr>
-							<td>1</td>
-							<td>Reports</td>
-							<td>10-10-2024</td>
-							<td>20-10-2024</td>
-							<td>Pending</td>
+							<td>2</td>
+							<td>Lists</td>
+							<td>15-10-2024</td>
+							<td>25-10-2024</td>
+							<td>Completed</td>
 							<td>
 								<button>Read more</button>
 							</td>
