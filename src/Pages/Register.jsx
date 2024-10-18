@@ -41,7 +41,7 @@ export default function Register() {
 						<Button type="submit">Register</Button>
 					</div>
 				</form>
-				<div className="text-center">
+				<div className="text-center mb-3">
 					Already have an account? <Link to="/login">Login here</Link>
 				</div>
 			</Card>

@@ -9,6 +9,7 @@ import Home from "./Pages/Home";
 import Register from "./Pages/Register";
 import AddTask from "./Components/AddTask";
 import AllTasks from "./Components/AllTasks";
+import TaskDetail from "./Components/TaskDetail";
 
 const router = createBrowserRouter([
 	{
@@ -26,6 +27,7 @@ const router = createBrowserRouter([
 			{ path: "/", element: <Home /> },
 			{ path: "/addtask", element: <AddTask /> },
 			{ path: "/alltasks", element: <AllTasks /> },
+			{ path: "/taskdetail", element: <TaskDetail /> },
 		],
 	},
 ]);

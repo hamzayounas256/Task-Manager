@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 export default function Header() {
 	return (
@@ -10,7 +11,7 @@ export default function Header() {
 				</Navbar.Brand>
 				{/* <Navbar.Toggle aria-controls="basic-navbar-nav" /> */}
 				{/* <Navbar.Collapse id="basic-navbar-nav"> */}
-				<Nav className="">
+				<Nav className="navi">
 					{/* <Nav.Link href="#home">Home</Nav.Link>
 						<Nav.Link href="#link">Link</Nav.Link> */}
 					<NavDropdown
@@ -20,12 +21,19 @@ export default function Header() {
 							marginRight: "2rem",
 						}}
 					>
-						<NavDropdown.Item href="#action/3.1">Add Records</NavDropdown.Item>
-						<NavDropdown.Item href="#action/3.2">Edit Records</NavDropdown.Item>
+						<NavDropdown.Item>
+							<Link to="/addtask">Add Records</Link>
+						</NavDropdown.Item>
+						<NavDropdown.Item>
+							<Link to="/alltasks">View Records</Link>
+						</NavDropdown.Item>
 						{/* <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item> */}
 						<NavDropdown.Divider />
 						<NavDropdown.Item>User Name</NavDropdown.Item>
-						<NavDropdown.Item>Logout</NavDropdown.Item>
+						<NavDropdown.Item>User Role</NavDropdown.Item>
+						<NavDropdown.Item>
+							<Link to="/login">Logout</Link>
+						</NavDropdown.Item>
 					</NavDropdown>
 				</Nav>
 				{/* </Navbar.Collapse> */}

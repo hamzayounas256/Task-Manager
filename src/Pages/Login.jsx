@@ -32,9 +32,8 @@ export default function Login() {
 					<div className="loginSubmit">
 						<Button type="submit">Login</Button>
 					</div>
-					{/* //jkh */}
 				</form>
-				<div className="text-center">
+				<div className="text-center mb-3">
 					Don't have an account? <Link to="/register">Register here</Link>
 				</div>
 			</Card>
