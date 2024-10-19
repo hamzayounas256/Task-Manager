@@ -10,6 +10,7 @@ import Register from "./Pages/Register";
 import AddTask from "./Components/AddTask";
 import AllTasks from "./Components/AllTasks";
 import TaskDetail from "./Components/TaskDetail";
+import EditTask from "./Components/EditTask";
 
 const router = createBrowserRouter([
 	{
@@ -28,6 +29,7 @@ const router = createBrowserRouter([
 			{ path: "/addtask", element: <AddTask /> },
 			{ path: "/alltasks", element: <AllTasks /> },
 			{ path: "/taskdetail", element: <TaskDetail /> },
+			{ path: "/edittask", element: <EditTask /> },
 		],
 	},
 ]);

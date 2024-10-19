@@ -239,3 +239,33 @@ h3:hover {
 	background-color: #e2f1e7;
 	color: #243642;
 }
+
+/* Task Detail */
+.taskdetail {
+	height: 90vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.taskdetailcard {
+	background-color: #629584;
+	color: #e2f1e7;
+	padding: 20px 20px;
+}
+
+.taskdetailcard div button {
+	background-color: #243642;
+	color: #e2f1e7;
+	/* display: flex; */
+	/* justify-content: end; */
+	/* margin-top: 15px; */
+	padding: 8px 10px;
+	border: none;
+	border-radius: 7px;
+}
+
+.taskdetailcard div button:hover {
+	background-color: #e2f1e7;
+	color: #243642;
+}

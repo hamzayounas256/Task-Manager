@@ -1,11 +1,15 @@
 import { Button, Card } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Login() {
+	const navigate = useNavigate();
+	const handleLogin = () => {
+		navigate("/");
+	};
 	return (
 		<div className="login">
 			<Card className="loginCard">
-				<form>
+				<form onSubmit={handleLogin}>
 					<h3 className="text-center">LOGIN</h3>
 					<div className="loginUser mb-2">
 						<label htmlFor="username">Username</label>

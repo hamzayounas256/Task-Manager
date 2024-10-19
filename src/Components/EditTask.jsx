@@ -1,12 +1,12 @@
 import React from "react";
 import { Card } from "react-bootstrap";
 
-export default function AddTask() {
+export default function EditTask() {
 	return (
 		<div className="adduser">
 			<Card className="addusercard">
 				<form className="adduserform">
-					<h3 className="text-center">ADD A NEW TASK</h3>
+					<h3 className="text-center">EDIT TASK</h3>
 					<div className="dates d-flex justify-content-between">
 						<div className="">
 							<label htmlFor="startDate">Start Date </label>
@@ -31,7 +31,7 @@ export default function AddTask() {
 					</div>
 					<div className="d-flex justify-content-end">
 						<button type="submit" className="btn adduserButton">
-							Add Task
+							Update Task
 						</button>
 					</div>
 				</form>
